@@ -20,6 +20,17 @@ XInput detected only **one** controller, even while `joy.cpl` showed three entri
 
 Disabling the two auxiliary HID nodes reduced DirectInput enumeration to one Ultimate 2C while preserving the XInput gamepad. The user confirmed the workaround resolved their controller issue. The exact cause of game-specific controller selection problems has not been established; this utility does not set player order.
 
+### Confirmed hardware checks
+
+With the two auxiliary interfaces disabled, the user confirmed the following on their controller:
+
+- Rumble works, tested using a local XInput utility with a two-second vibration command.
+- L4 and R4 work with their assigned buttons.
+- The Home button works.
+- The onboard recording/mapping button used to configure L4/R4 works.
+
+These are user-confirmed checks on one controller and PC, not a guarantee for every game, firmware version, or mapping. The star/Turbo function has not yet been tested. The duplicate-entry workaround was verified separately over USB cable and the included 2.4 GHz receiver; the individual function checks above have not been documented separately for both connections.
+
 ## Download and use
 
 1. Download `Ultimate2CFix.exe` or the portable ZIP from [Releases](https://github.com/MatyMeatBoy/Ultimate2C-FixDuplicates/releases).
